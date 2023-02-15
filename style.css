@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url('https://images2.alphacoders.com/101/1012880.jpg');
+    background-repeat: no-repeat;
+}
+.timedate::before{
+    content: "";
+    height: 200px;
+    background-color: black;
+    opacity: 0.35;
+    position: absolute;
+    z-index: -1;
+    width: 375px;
+    box-shadow: 2px 2px 9px 0px white;
+    border-radius: 20px;
+}
+.timedate{
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 9px 0px white;
+    height: 200px;
+    width: 380px;
+}
+
+.outer{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.outer-search{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.time{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 20px;
+}
+.num{
+    font-size: 50px;
+}
+
+.date{
+    font-family: 'Raleway', sans-serif;
+    font-size:  500px;
+    margin: 0px 20px;
+    font-size: 30px;
+}
+
+.logo{
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+.values{
+    border: 2px solid greenyellow;
+    margin: 50px auto;
+    height: 435px;
+    width: 570px;
+}
+.values::before{
+    content: "";
+    position: absolute;
+    box-shadow: 2px 2px 9px 0px white;
+    background-color: black;
+    opacity: 0.4;
+    height: 434px;
+    width: 570px;
+    z-index: -1;
+}
+
+.search{
+    text-align: center;
+}
+
+.tablelines{
+    text-align: center;
+    color: white;
+}
+
+#detail{
+    color: white;
+}
+
+/* Style the search field */
+
+.row > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+    width: 25% !important;
+}
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    justify-content: center;
+}
+
+.temp{
+    margin-top: 10px;
+}
+.disp{
+    display: none;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 84%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 16%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#weather{
+    color: aliceblue;
+}
+
+#weather-image{
+    width: 30px;
+}
+#weather-image img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.table {
+    --bs-table-hover-color: #39f12e !important;
+    --bs-table-hover-bg: rgb(255 255 255 / 8%) !important;
+}
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+ @media (min-width:510px) and (max-width: 1020px) {
+    .outer{
+        padding: 15px 0px;
+    }
+    .timedate{
+        height: 120px;
+        width: 305px;
+    }
+    .timedate::before {
+        height: 120px;
+        width: 300px;
+    }
+    .outer-search{
+
+    }
+    .values::before {
+        height: 408px;
+        width: 500px;
+    }
+    .values {
+        height: 408px;
+        margin: 20px auto;
+        width: 500px;
+    }
+    
+    #weather-image img {
+        width: 70px;
+        height: 70px;
+    }
+    .logo {
+        width: 110px;
+    }
+    .num {
+        font-size: 30px;
+    }
+    .date {
+        font-size: 20px;
+    }
+
+
+    #detail h2{
+        font-size: 20px;
+    }
+    #detail h4{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:0px) and (max-width: 510px){
+    .outer{
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .timedate{
+        height: 120px;
+        width: 180px;
+    }
+    .timedate::before {
+        height: 120px;
+        width: 180px;
+    }
+    .logo {
+        width: 120px; 
+    }
+    .num {
+        font-size: 30px;
+    }
+    .date {
+        font-size: 25px;
+    }
+    .values {
+        margin: 20px auto;
+        height: 416px;
+        width: 300px;
+    }
+    .values::before {
+        height: 416px;
+        width: 300px;
+    }
+    #weather-image img {
+        width: 80px;
+        height: 80px;
+    }
+    #detail{
+        font-size: 20px;
+    }
+    .temp{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width:300px){
+    .logo{
+        display: none;
+    }
+}
+
+
