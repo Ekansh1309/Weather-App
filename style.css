@@ -7,6 +7,9 @@ body{
     font-family: 'Raleway', sans-serif;
     background-image: url('https://images2.alphacoders.com/101/1012880.jpg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 .timedate::before{
     content: "";
